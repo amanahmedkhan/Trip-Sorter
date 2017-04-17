@@ -18,6 +18,3 @@ node version require 6.0 or greater
 
 ## Run Project
 `npm run server`
-
-## Production Build
-`npm run prod`
