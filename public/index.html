@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <title>Trip Sorter</title>
+	    <meta name="description" content="">
+	    <meta name="viewport" content="width=device-width">
+	    <!-- Start CSS File -->
+	    	<link rel="stylesheet" href="index.css">
+	    <!-- End CSS File -->
+  	</head>
+	<body>
+		<main>
+			<!-- Start Header -->
+				<header class="header">
+					<div class="headerFixed">
+						<h1 class="white">Trip Sorter</h1>
+					</div>
+				</header>
+			<!-- End Header -->
+
+			<!-- Start Container -->
+				<div class="main">
+					<div class="wrapper">
+						<!-- Start Aside -->
+							<aside class="leftSidebar">
+								<div class="sorter">
+									<h2>Search
+										<small>Find Your Destination</small>
+									</h2>
+									<form action="javascript:;" method="post">
+										<select name="from" class="getFrom select" placeholder="From">
+											<option value="from">From</option>
+										</select>
+										<select name="to" class="getTo select" placeholder="To">
+											<option value="to">To</option>
+										</select>
+										<div class="switch">
+											<input type="radio" id="cheapest" name="switch" value="yes" checked/>
+											<label for="cheapest">Cheapest</label>
+											<input type="radio" id="fastest" name="switch" value="no" />
+											<label for="fastest">Fastest</label>
+										</div>
+										<input type="submit" class="btn" value="Submit" id="submit">
+									</form>
+								</div>
+							</aside>
+						<!-- End Aside -->
+						<!-- Start Section -->
+							<section class="content">
+								<div class="container">
+									<div class="sortList"></div>
+									<div class="resultText">Trip Not Selected</div>
+								</div>
+							</section>
+						<!-- End Section -->
+					</div>
+				</div>
+			<!-- End Container -->
+		</main>
+
+		<!-- Start JS File -->
+			<script src="index.min.js"></script>
+		<!-- End JS FIle -->
+	</body>
+</html>

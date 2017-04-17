@@ -1,0 +1,206 @@
+// Font Family
+$font1 = 'Noto Sans', sans-serif
+
+// Colors
+$bodyColor = #F9F9F9
+$colorWhite = #FFF
+$colorPrimary = #2196F3
+$colorBlack = #000000
+$colorGrey = #AEAEAE
+$colorLight = #e0e0e0
+$colorOrange = #FFA000
+$colorBlue = #00BCD4
+$colorPink = #FF4081
+
+// Font Sizes
+$fontSize1 = 24px
+$fontSize2 = 17px
+$fontSize3 = 14px
+$fontSize4 = 13px
+$fontSize5 = 12px
+
+// Base Start
+h1, h2, h3, h4, h5, h6, p, ul, ol, form, body, figure
+	font-weight normal
+	padding 0
+	margin 0
+h1
+	font-size $fontSize1
+	padding: 6px 0
+h2
+	font-size $fontSize2
+	padding: 0 0 10px
+small
+	font-size $fontSize5
+	margin-top 10px
+	display block
+li
+	list-style none
+p
+	padding-bottom 10px
+p, li
+	font-size $fontSize3
+a
+	text-decoration none	
+// Base End
+
+// Body Start
+body
+	font-family $font1
+	background $bodyColor
+// Body End
+
+// Colors Class Start
+.white
+	color $colorWhite
+// Colors Class End
+
+// Container Start
+.main
+	padding-left 240px
+	
+.container
+	width 97%
+	margin 0 auto
+	max-width 100%
+	padding 22px 0.5rem
+// Container End
+
+// Overlay Start
+.overlay
+	&:before
+		background $colorBlack
+		position absolute
+		opacity 0.3
+		content ''
+		width 100%
+		height 100%
+		bottom 0
+		right 0
+		left 0
+		top 0
+// Overlay End
+
+// Flex Row Start
+.row
+	display flex
+	flex-direction row
+	justify-content space-between
+// Flex Row End
+
+// Form End
+// Select Box
+	.select
+		border 0
+		height 40px
+		width 100%
+		cursor pointer
+		padding 6px 0
+		margin-bottom 8px
+		color $colorGrey
+		font-family $font1
+		font-size $fontSize4
+		background $colorWhite
+		transition all ease 0.5s
+		border-bottom 1px solid $colorLight
+		option
+			color $colorBlack
+		&:hover,&:focus
+			color $colorPink
+			border-color $colorPink
+// Check Box Start
+	.switch
+		display inline-block
+		text-align center
+		margin 15px 0
+		width 100%
+		input
+			position absolute
+			overflow hidden
+			height 1px
+			width 1px
+			border 0
+			display none
+	
+		label
+			transition all ease-in-out 0.1s
+			background $colorLight
+			font-size $fontSize5
+			cursor pointer
+			padding 5px
+			float left
+			width 57px
+			&:first-of-type
+				border-radius 4px 0 0 4px
+			&:last-of-type
+				border-radius 0 4px 4px 0
+
+		input:checked + label
+			background $colorOrange
+			color $colorWhite
+// Form End
+
+// Buttons Start
+.btn
+	border 0
+	cursor pointer
+	padding 6px 16px
+	border-radius 2px
+	text-decoration none
+	background $colorPrimary
+	font-size $fontSize4
+	color $colorWhite
+	font-family $font1
+	box-shadow 0 1px 2px rgba($colorBlack, 0.15)
+// Buttons End
+
+// Icons Start
+.icon
+	background url("/images/icons.png")
+	transform translate(-50%,-50%)
+	background-repeat no-repeat
+	background-position 0
+	display inline-block
+	position absolute
+	height 30px
+	width 30px
+	left 50%
+	top 19%
+// Icons End
+
+// Keyframe Start
+@-webkit-keyframes FadeIn
+	0% {opacity:0;}
+	21.25% {opacity:1;}
+	25% {opacity:1;}
+
+.item
+	-webkit-animation FadeIn 1s linear
+	-moz-animation FadeIn 1s linear
+	-ms-animation FadeIn 1s linear
+	-o-animation FadeIn 1s linear
+	animation FadeIn 1s linear
+	-webkit-animation-fill-mode both
+	-moz-animation-fill-mode both
+	-ms-animation-fill-mode both
+	-o-animation-fill-mode both
+	animation-fill-mode both
+	&:nth-child(1)
+		-webkit-animation-delay .5s
+		-moz-animation-delay .5s
+		-ms-animation-delay .5s
+		-o-animation-delay .5s
+		animation-delay .5s
+	&:nth-child(2)
+		-webkit-animation-delay 1s
+		-moz-animation-delay 1s
+		-ms-animation-delay 1s
+		-o-animation-delay 1s
+		animation-delay 1s
+	&:nth-child(3)
+		webkit-animation-delay 1.5s
+		-moz-animation-delay 1.5s
+		-ms-animation-delay 1.5s
+		-o-animation-delay 1.5s
+		animation-delay 1.5s	
+// Keyframe End
