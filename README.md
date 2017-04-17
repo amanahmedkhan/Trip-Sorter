@@ -1,5 +1,3 @@
-# Trip Sorter
-node version require 6.0 or greater
 
 ## Features
 - CSS
@@ -21,3 +19,5 @@ node version require 6.0 or greater
 
 ## Production Build
 `npm run prod`
+
+
